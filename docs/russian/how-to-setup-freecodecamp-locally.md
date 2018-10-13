@@ -12,37 +12,37 @@
 
 > **Профессиональный совет:**
 > Главный репозиторий по адресу `https://github.com/freeCodeCamp/freeCodeCamp` в основном называется `высокопоточным` репозиторием.
-> Ваша копия по адресу вроде `https://github.com/YOUR_USER_NAME/freeCodeCamp` в основном называется `источником` для другого репозитория.
+> Ваша копия по адресу `https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp` в основном называется `источником` для другого репозитория.
 
-**Follow these steps to fork the `https://github.com/freeCodeCamp/freeCodeCamp` repository:**
+**Следуйте этим шагам чтобы скопировать `https://github.com/freeCodeCamp/freeCodeCamp` репозиторий:**
 
-1. Go to the freeCodeCamp repository on GitHub: <https://github.com/freeCodeCamp/freeCodeCamp>
-2. Click the "Fork" Button in the upper right hand corner of the interface ([More Details Here](https://help.github.com/articles/fork-a-repo/))
-3. After the repository has been forked, you will be taken to your copy of the freeCodeCamp at `https://github.com/YOUR_USER_NAME/freeCodeCamp`
+1. Перейдите на GitHub репозиторий freeCodeCamp: <https://github.com/freeCodeCamp/freeCodeCamp>
+2. нажмите кнопку "Fork" в правом верхнем углу интерфейса ([Больше подробностей тут](https://help.github.com/articles/fork-a-repo/))
+3. После копирования репозитория, вы будете перемещены к вашей собственной копии freeCodeCamp `https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp`
 
-![GIF - How to fork freeCodeCamp on Github](/docs/images/github/how-to-fork-freeCodeCamp.gif)
+![GIF - Как скопировать freeCodeCamp на Github](/docs/images/github/how-to-fork-freeCodeCamp.gif)
 
-## Preparing the development environment
+## Подготовка среды разработки
 
-Once you have the prerequisites installed, you need to prepare you development environment. This is common for many development workflows, and you will need to do this only once.
+После начальной подготовки вам необходимо подготовить среду разработки. Это характерно для многих рабочих процессов разработки, и вам понадобится сделать это только один раз.
 
-**Follow these steps to get your development environment ready:**
+**Следуйте этим шагам чтобы пожготовить вашу рабочую среду:**
 
-1. Install [Git](https://git-scm.com/) or your favorite Git client, if you haven't already. Update to the latest version, the one that came bundled with your OS may be outdated.
+1. Установите [Git](https://git-scm.com/) или ваш любимый Git клиент, если вы не сделали этого раньше. Обновитесь до последней версии, если ваш клиент предустановлен с вашей ОС то он мог устареть.
 
-2. (Optional but recommended) [Setup an SSH Key](https://help.github.com/articles/generating-an-ssh-key/) for GitHub.
+2. (Необязательно но рекомендуется) [Установить SSH ключ](https://help.github.com/articles/generating-an-ssh-key/) для GitHub.
 
-3. Install a code editor of your choice.
+3. Установите редактор кода на свой выбор.
 
-    We highly recommend using [VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). These are some great free and open source code editors.
+    Мы очень рекомендуем использовать [VS Code](https://code.visualstudio.com/) или [Atom](https://atom.io/). Это отличные бесплатные редакторы кода с открытым исходным кодом.
 
-4. Setup linting for your code editor.
+4. Установите статический анализатор(также lint) для вашего редактора кода.
 
-    You should have [ESLint running in your editor](http://eslint.org/docs/user-guide/integrations.html), and it will highlight anything doesn't conform to [freeCodeCamp's JavaScript Style Guide](http://forum.freecodecamp.org/t/free-code-camp-javascript-style-guide/19121).
+    У вас в редакторе должен быть запущен [ESLint](http://eslint.org/docs/user-guide/integrations.html), и он подсветит все что не соответствует с [руководством JavaScript стиля от freeCodeCamp](http://forum.freecodecamp.org/t/free-code-camp-javascript-style-guide/19121).
 
-    > Please do not ignore any linting errors. They are meant to **help** you and to ensure a clean and simple code base.
+    > Пожалуйста не игнорируйте любые ошибки статического анализатора. Они предназначены чтобы **помочь** вам, для обеспечения чистого и простого кода.
 
-## Clone your copy of freeCodeCamp
+## Клонирование вашей копии freeCodeCamp
 
 ['Cloning'](https://help.github.com/articles/cloning-a-repository/) is a step where you **download** a copy of a repository that is either owned by you or someone else from a `remote` location. In your case, this remote location is your `fork` of freeCodeCamp's repository, that should be available at `https://github.com/YOUR_USER_NAME/freeCodeCamp`.
 
