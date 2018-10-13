@@ -10,9 +10,9 @@
 
 Как установить и запустить MailHog зависит от вашей ОС
 
-- [Установка MailHog для macOS](#установка-mailhog-для-macos)
-- [Установка MailHog для Windows](#установка-mailhog-для-windows)
-- [Установка MailHog для Linux](#установка-mailhog-для-linux)
+- [Установка MailHog для macOS](#Установка-mailhog-для-macos)
+- [Установка MailHog для Windows](#Установка-mailhog-для-windows)
+- [Установка MailHog для Linux](#Установка-mailhog-для-linux)
 
 ### Установка MailHog для macOS
 
@@ -25,7 +25,7 @@ brew services start mailhog
 
 Это запустит сервисы mailhog в фоновом режиме.
 
-Затем вы можете перейти к [использованию MailHog](#использование-mailhog).
+Затем вы можете перейти к [использованию MailHog](#Использование-mailhog).
 
 ### Установка MailHog для Windows
 
@@ -35,7 +35,7 @@ brew services start mailhog
 
 Для закрытия MailHog'a достаточно закрыть командную строку. Для повторного запуска откройте тот-же .exe файл. Не нужно скачивать его заново.
 
-Затем вы можете перейти к [использованию MailHog](#использование-mailhog).
+Затем вы можете перейти к [использованию MailHog](#Использование-mailhog).
 
 ### Установка MailHog для Linux
 
@@ -75,7 +75,7 @@ sudo cp /home/$(whoami)/go/bin/MailHog /usr/local/bin/mailhog
 mailhog
 ```
 
-Затем вы можете перейти к [использованию MailHog](#использование-mailhog).
+Затем вы можете перейти к [Использованию MailHog](#использование-mailhog).
 
 ## Использование MailHog
 
