@@ -11,7 +11,7 @@
 Это важно, потому что этот способ позволит вам работать с собственной копией freeCodeCamp на GitHub, или загрузить её для работы локально. Позже, вы сможете запросить добавление изменений в основной репозиторий при помощи запроса на добавление(pull request'a).
 
 > **Профессиональный совет:**
-> Главный репозиторий по адресу `https://github.com/freeCodeCamp/freeCodeCamp` в основном называется `высокопоточным` репозиторием.
+> Репозиторий по адресу `https://github.com/freeCodeCamp/freeCodeCamp` в основном называется `главным` репозиторием.
 > Ваша копия по адресу `https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp` в основном называется `источником` для другого репозитория.
 
 **Следуйте этим шагам чтобы скопировать `https://github.com/freeCodeCamp/freeCodeCamp` репозиторий:**
@@ -24,9 +24,9 @@
 
 ## Подготовка среды разработки
 
-После начальной подготовки вам необходимо подготовить среду разработки. Это характерно для многих рабочих процессов разработки, и вам понадобится сделать это только один раз.
+После начальных настроек вам необходимо подготовить среду разработки. Это характерно для многих рабочих процессов разработки, и вам понадобится сделать это только один раз.
 
-**Следуйте этим шагам чтобы пожготовить вашу рабочую среду:**
+**Следуйте этим шагам чтобы подготовить вашу рабочую среду:**
 
 1. Установите [Git](https://git-scm.com/) или ваш любимый Git клиент, если вы не сделали этого раньше. Обновитесь до последней версии, если ваш клиент предустановлен с вашей ОС то он мог устареть.
 
@@ -44,49 +44,49 @@
 
 ## Клонирование вашей копии freeCodeCamp
 
-['Cloning'](https://help.github.com/articles/cloning-a-repository/) is a step where you **download** a copy of a repository that is either owned by you or someone else from a `remote` location. In your case, this remote location is your `fork` of freeCodeCamp's repository, that should be available at `https://github.com/YOUR_USER_NAME/freeCodeCamp`.
+['Клонирование'](https://help.github.com/articles/cloning-a-repository/) это шаг в котором вы **скачиваете** копию репозитория, пренадлежащую вам или кому-либо еще, из `удаленной` локации. В вашем случае, эта удаленная локация ваша `копия` репозитория freeCodeCamp, она должна быть доступна по адресу `https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp`.
 
-Run these commands on your local machine:
+Выполните эти команды на вашем устройстве:
 
-1. Open a Terminal / Command Prompt / Bash Shell in your projects directory
+1. Откройте Терминал / Командную строку / Оболочку терминала в директории вашего проекта
 
-    _i.e.: `/yourprojectdirectory/`_
+    _т.е.: `/директориявашегопроекта/`_
 
-2. Clone your fork of freeCodeCamp, replacing `YOUR_USER_NAME` with your GitHub Username
+2. Клонируйте вашу копию freeCodeCamp, заменив `ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ` вашим именем пользователя GitHub
 
     ```shell
-    git clone https://github.com/YOUR_USER_NAME/freeCodeCamp.git
+    git clone https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp.git
     ```
 
-This will download the entire freeCodeCamp repository to your projects directory.
+Это загрузит весь репозиторий freeCodeCamp в вашу директорию проекта.
 
-## Setup a `upstream` to the main repository
+## Установка `главного` репозитория
 
-Now that you have downloaded a copy of your fork, you will need to setup an `upstream`.
+Теперь, когда вы загрузили вашу копию, вам нужно установить `главный` репозиторий.
 
-As mentioned earlier, the main repository at `https://github.com/freeCodeCamp/freeCodeCamp` is often referred to as `upstream` repository. Your fork at `https://github.com/YOUR_USER_NAME/freeCodeCamp` is often referred to as `origin` repository.
+Как упоминалось ранее, репозиторий по адресу `https://github.com/freeCodeCamp/freeCodeCamp` зачастую называют `главным` репозиторием. Ваша копия по адресу `https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp` зачастую называется `источником` для других репозиториев.
 
-You need to point your local clone to the `upstream` in addition to the `origin`. This is so that you can sync changes from the main repository. This way you do not have to go through forking and cloning again and again.
+Вам нужно создать локальнй клон для `главного` репозитория в дополнение к `источнику`. Это позволит синхронизировать изменения из главного репозитория. Таким обазом вам удастся избежать повторного копирования и клонирования снова и снова.
 
-1. Change directory to the new freeCodeCamp directory:
+1. Измените текущую директорию на директорию freeCodeCamp:
 
     ```shell
     cd freeCodeCamp
     ```
 
-2. Add a remote to the main freeCodeCamp repository:
+2. Добавьте удаленное соединение с главным репозиторием freeCodeCamp:
 
     ```shell
     git remote add upstream https://github.com/freeCodeCamp/freeCodeCamp.git
     ```
 
-3. Check the configuration looks good to you:
+3. Убедитесь что конфигурация выглядит хорошо:
 
     ```shell
         git remote -v
     ```
 
-        The output should be something like below:
+        Выход должен быть чем-то вроде этого:
 
     ```shell
         origin    https://github.com/YOUR_USER_NAME/freeCodeCamp.git (fetch)
