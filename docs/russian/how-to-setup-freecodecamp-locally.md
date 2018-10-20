@@ -11,7 +11,7 @@
 Это важно, потому что этот способ позволит вам работать с собственной копией freeCodeCamp на GitHub, или загрузить её для работы локально. Позже, вы сможете запросить добавление изменений в основной репозиторий при помощи запроса на добавление (pull request'a).
 
 > **Профессиональный совет:**
-> Репозиторий по адресу `https://github.com/freeCodeCamp/freeCodeCamp` в основном называется `главным` репозиторием.
+> Репозиторий по адресу `https://github.com/freeCodeCamp/freeCodeCamp` в основном называется `главным` репозиторием(потоком).
 > Ваша копия по адресу `https://github.com/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/freeCodeCamp` в основном называется `источником` для другого репозитория.
 
 **Следуйте этим шагам чтобы скопировать `https://github.com/freeCodeCamp/freeCodeCamp` репозиторий:**
@@ -86,7 +86,7 @@
         git remote -v
     ```
 
-        Выход должен быть чем-то вроде этого:
+        На выходе вы должны получить что-то вроде этого:
 
     ```shell
         origin    https://github.com/YOUR_USER_NAME/freeCodeCamp.git (fetch)
@@ -197,54 +197,54 @@ npm run bootstrap
 
 > Професиональный совет:
 > Вы можете избежать запуска MongoDB каждый раз, установив его в качестве фонового сервиса.
-> Вы моежете [узнать больше об этом в документации для вашей ОС](https://docs.mongodb.com/manual/administration/install-community/)
+> Вы можете [узнать больше об этом в документации для вашей ОС](https://docs.mongodb.com/manual/administration/install-community/)
 
-### Seeding the database
+### Наполнение базы данных
 
-Next, lets seed the database. In this step, we run the below command that will fill the MongoDB server with some initial data-sets that is required by the other services. This include a few schemas, among other things.
+Дальше, давайте наполним базу данных. На этом этапе, мы запускаем команду которая наполнит сервер MongoDB некоторыми начальными наборами данных, которые необходимы для других сервисов. Это включает в себя несколько схем, помимо всего прочего.
 
 ```shell
 npm run seed
 ```
 
-### Start the freeCodeCamp client application and API server
+### Запуск API сервера и клиента freeCodeCamp
 
-You can now start up the API server and the client applications.
+Теперь вы можете запустить API сервер и клиентские приложения.
 
 ```shell
 npm run develop
 ```
 
-This single command will fire up all the services, including the API server and the client applications available for you to work on.
+Эта единственная команда запустит все сервисы, включая API сервер и доступные вам клиентские приложения.
 
-Now open a web browser and visit <http://localhost:8000>. If the app loads, congratulations – you're all set.
+Теперь откройте браузер и посетите <http://localhost:8000>. Если приложение загружается, мои поздравления – все готово.
 
-> ProTip:
+> Профессиональный совет:
 >
-> The API Server serves APIs at `http://localhost:3000`
-> The Gatsby app serves the client application at `http://localhost:8000`
+> API сервер обслуживает API по адресу `http://localhost:3000`
+> Приложение Gatsby обслуживает клиентское приложение по адресу `http://localhost:8000`
 
-Meaning, if you visit <http://localhost:3000/explorer> you should see the APIs that we have.
+А это значит, что если вы посетите <http://localhost:3000/explorer> вы должны увидеть все имеющиеся у нас APIs.
 
-Congratulations 🎉! You now have a copy of freeCodeCamp's entire learning platform running on your local machine.
+Поздравляем 🎉! Теперь у вас есть копия всей обучающей платформы freeCodeCamp на вашем локальном устройстве.
 
-## Quick commands reference when working locally
+## Ссылка на быстрые команды при локальной работе
 
-[Here is a quick reference](/docs/README.md) to a list of commands that you may need locally from time to time:
+[Вот краткая ссылка](/docs/russian/README.md) на список команд которые могут понадобиться время от времени.
 
 ## Локальное внесение изменений в ваш клон freeCodeCamp
 
-Next, you can make changes to files, and commit your changes.
+Теперь, вы можете изменять и фиксировать свои изменения.
 
-Follow these steps:
+Следуйте этим шагам:
 
-1. Check that you are on the `master` branch
+1. Убедитесь что вы на `master` ветке
 
     ```shell
     git status
     ```
 
-    You should get a output like this:
+    На выходе вы должны получить что-то вроде этого:
 
     ```shell
     On branch master
@@ -253,39 +253,39 @@ Follow these steps:
     nothing to commit, working directory clean
     ```
 
-    If you are not on master or your working directory is not clean, resolve any outstanding files/commits and checkout `master`:
+    Если вы не на  `master` ветке, или ваша рабочая директория не чиста, разберитесь с любыми выведенными файлами/коммитами и проверьте `master`:
 
     ```shell
     git checkout master
     ```
 
-2. Next, you would want to `rebase` from the `upstream`.
+2. Затем вы захотите `перебазироваться` из `главного` потока.
 
-    This step **will sync the lastest changes** from the main repository of freeCodeCamp. Its important that you rebase as often as possible, to avoid conflicts later.
+    Этот шаг **синхронизирует последние изменения** из главного freeCodeCamp репозитория. Важно проводить `перебазировку` как можно чаще, чтобы избежать возможных конфликтов.
 
     ```shell
     git pull --rebase upstream master
     ```
 
-    You can optionally push this branch back to your origin, to have a clean history on your fork on GitHub.
+    Возможно вы захотите выгрузить эту ветку обратно в ваш `источник`, чтобы иметь чистую историю на своей ветке GitHub.
 
     ```shell
     git push origin master --force
     ```
 
-3. Next, you will have to create a fresh new branch.
+3. далее, вам нужно создать новую свежую ветку.
 
-    Working on a separate branch for every single issue, helps you keep your local work copy clean. You should never work on the `master`. This will soil your copy of freeCodeCamp and you may have to start over with a fresh clone or fork.
+    Работа над каждой проблемой в отдельной ветке поможет вам держать вашу локалуную рабочую копию в чистоте. Вы никогда не должны вести работы в `master` ветке. Это испортит вашу копию freeCodeCamp, и вам, возможно, придется начать с нового клона или ветки.
 
-    Check that you are on `master` as explained previously, and branch off from there:
+    Убедитесь в том что вы находитесь в `master` ветке, и, как и объясняется выше, создайте новое ответвление:
 
     ```shell
     git checkout -b fix/update-guide-for-xyz
     ```
 
-    Your branch name should start with a `fix/`, `feat/`, etc. Avoid, using issue no.s in branches. Keep them short, meaningful and unique.
+    Имя вашей ветки должно начинаться с `fix/`, `feat/`, и т.д. Избегайте использования номеров вопросов в названиях веток. делайте их короткими, осмысленными и уникальными.
 
-    Some examples of good branch names are:
+    Вот несколько примеров хороших названий веток:
 
     ```md
     fix/update-challenges-for-react
