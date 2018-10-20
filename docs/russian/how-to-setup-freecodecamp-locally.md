@@ -119,7 +119,7 @@
 
 **Важно:**
 
-Мы настоятельно рекомендуем обновление до последних стабильных релизов (также известных как LTS релизы) упомянутых выше.
+Мы настоятельно рекомендуем обновляться до последних стабильных релизов (также известных как LTS релизы) упомянутых выше.
 Если Node.js или MongoDB уже установлены на вашем устройстве, выполните следующие команды для проверки версий:
 
 ```shell
@@ -138,20 +138,20 @@ npm -v
 
 Мы не можем помочь вам в GitHub, потому-что проблемы с установкой ПО выходят за рамки этого проекта.
 
-### Installing dependencies
+### Установка зависимостей
 
-Start by installing the dependencies required for the application to startup.
+Начните с установки зависимосте, необходимых для запуска приложения.
 
 ```shell
 # Install NPM dependencies
 npm install
 ```
 
-Then you need to add the private environment variables (API Keys):
+Затем вам нужно добавить переменные частной среды (API ключи):
 
 ```shell
-# Create a copy of the "sample.env" and name it as ".env".
-# Populate it with the necessary API keys and secrets:
+# Создайте копию "sample.env" и назовите ее ".env".
+# Заполните ее необходимыми API ключами и секретами:
 
 # macOS / Linux
 cp sample.env .env
@@ -160,44 +160,44 @@ cp sample.env .env
 copy sample.env .env
 ```
 
-The keys are not required to be changed, to run the app locally. You can leave the default values from the `sample.env` as it is.
+Для локального запуска приложения ключи изменять не нужно. Вы можете оставить стандартные значения из `sample.env` как есть.
 
-`MONGOHQ_URL` is the most important one. Unless you have MongoDB running in a setup different than the defaults, the URL in the `sample.env` should work fine.
+`MONGOHQ_URL` один из важнейших. Если у вас не был установлен MongoDB с настройками отличными от стандартных, URL адрес в `sample.env` должен отлично работать.
 
-You can leave the other keys as they are. Keep in mind if you want to use more services you'll have to get your own API keys for those services and edit those entries accordingly in the `.env` file.
+Вы можете оставить остальные ключи как есть. Имейте ввиду, если вы захотите использовать другие сервисы, вам нажно будет получить свои собственные API ключи для этих сервисов и изменить их в`.env`файле.
 
-Next lets, bootstrap the various services, i.e. the api-server, the client UI application, etc. You can [learn more about these services in this guide](#).
+Затем давайте загрузим разные сервисы, т.е. api-server, клиентское UI приложение, и т.д. Вы можете [узнать больше об этих сервисах в этом руководстве](#).
 
-By bootstrapping you are tying the links between the services. They are semi-independent. Meaning, in production these services are deployed to their own locations, but while running locally you want them all to be available to you.
+При загрузке вы связываете ссылки между сервисами. Они полунезависимы. Это значит что в продукции эти сервисы разворачиваются в их собственных местах, но во время локального запуска вы делаете так чтобы все они были доступны для вас.
 
 ```shell
-# Bootstrap all projects inside this repository
+# Загрузите все проекты внути этого репозитория
 npm run bootstrap
 ```
 
-### Start MongoDB
+### запуск MongoDB
 
-You will need to start MongoDB, before you can start the application:
+Перез запуском приложения вам нужно запустить MongoDB:
 
-Start the MongoDB server in a separate terminal
+Запустите сервер MongoDB в отдельном терминале
 
-- On macOS & Ubuntu:
+- macOS & Ubuntu:
 
     ```shell
     mongod
     ```
 
-- On Windows, you have to instead specify the full path to the `mongod` binary
+- Windows, вам нужно указать полный путь к бинарному файлу `mongod`
 
-    Make sure to replace `3.6` with the version you have installed
+    Не забудьте заменить `3.6` на установленную вами версию
 
     ```shell
     "C:\Program Files\MongoDB\Server\3.6\bin\mongod"
     ```
 
-> ProTip:
-> You can avoid having to start MongoDB every time, by installing it as a background service.
-> You can [learn more about it in their documentation for your OS](https://docs.mongodb.com/manual/administration/install-community/)
+> Професиональный совет:
+> Вы можете избежать запуска MongoDB каждый раз, установив его в качестве фонового сервиса.
+> Вы моежете [узнать больше об этом в документации для вашей ОС](https://docs.mongodb.com/manual/administration/install-community/)
 
 ### Seeding the database
 
