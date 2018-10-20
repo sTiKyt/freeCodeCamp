@@ -95,32 +95,32 @@
         upstream    https://github.com/freeCodeCamp/freeCodeCamp.git (push)
     ```
 
-## Running freeCodeCamp locally on your machine
+## Локальный запуск freeCodeCamp на вашем устройстве
 
-Now that you have a local copy of freeCodeCamp, you can follow these instructions to get it running locally. This will help you to:
+Теперь, когда у вас есть клон freeCodeCamp, вы можете следовать этим интрукциям чтобы локально запустить его. Это позволит вам:
 
-- Preview edits to pages as it would appear on the learning platform.
-- Work on UI related issues and enhancements.
-- Debug and fix issues in the application servers and client apps.
+- Предпросматривать изменения страниц, как на обучающей платформе.
+- Работать над проблемами и улучшениями связанными с интерфейсом.
+- Отлаживать и исправлять проблемы серверов и клиентов приложений.
 
-You can skip running freeCodeCamp locally, if you are just editing files, doing a `rebase` or resolving `merge` conflicts. You can always return to this part of the instructions later.
+Вы можете пропустить локальный запуск freeCodeCamp, если вы просто редактируете файлы, проводите `перебазировку` или решаете проблемы `слияния`. Вы всегда сможете вернуться к этой части инструкции позже.
 
-[Skip running freeCodeCamp locally](#making-changes-to-your-clone-of-freecodecamp-locally)
+[Пропустить локальный запуск freeCodeCamp](#Локальное-внесение-изменений-в-ваш-клон-freecodecamp)
 
-### Installing prerequisites
+### Установка необходимого ПО
 
-Start by installing these prerequisite software.
+Начните с установки этого необходимого ПО.
 
-| Prerequisite                                | Version | Notes |
+| Необходимое ПО                               | Версия | Записи |
 | ------------------------------------------- | ------- | ----- |
-| [MongoDB Community Server](https://docs.mongodb.com/manual/administration/install-community/) | `3.6`   | [Release Notes](https://docs.mongodb.com/manual/release-notes/), Note: We currently on `3.6`, an [upgrade is planned](https://github.com/freeCodeCamp/freeCodeCamp/issues/18275).
-| [Node.js](http://nodejs.org)                | `8.x`   | [LTS Schedule](https://github.com/nodejs/Release#release-schedule) |
-| npm (comes bundled with Node)               | `6.x`   | Does not have LTS releases, we use the version bundled with Node LTS |
+| [MongoDB Общественный Сервер](https://docs.mongodb.com/manual/administration/install-community/) | `3.6`   | [Записи релизов](https://docs.mongodb.com/manual/release-notes/), Актуальная версия `3.6`, планируется [обновление](https://github.com/freeCodeCamp/freeCodeCamp/issues/18275).
+| [Node.js](http://nodejs.org)                | `8.x`   | [График LTS](https://github.com/nodejs/Release#release-schedule) |
+| npm (идет вместе с Node)               | `6.x`   | Не предоставляет LTS релизов, мы используем версию в комплекте с Node LTS |
 
-**Important:**
+**Важно:**
 
-We highly recommend updating to the latest stable releases a.k.a Long Term Support (LTS) versions of the above.
-If Node.js or MongoDB is already installed on your machine, run the following commands to validate the versions:
+Мы настоятельно рекомендуем обновление до последних стабильных релизов (также известных как LTS релизы) упомянутых выше.
+Если Node.js или MongoDB уже установлены на вашем устройстве, выполните следующие команды для проверки версий:
 
 ```shell
 node -v
@@ -128,15 +128,15 @@ mongo --version
 npm -v
 ```
 
-> If you have a different version, please install the recommended version. We can support installation issues for recommended versions only.
+> Если у вас другая версия, пожалуйста установите рекомендуемую версию. Мы предоставляем поддержку только для рекомендуемых версий.
 
-**I am having issues with installing the recommended Prerequisites. What should I do?**
+**У меня возникли проблемы с установкой необходимого ПО. Что мне делать?**
 
-We regularly develop on popular and latest operating systems like macOS 10.12 or later, Ubuntu 16.04 or later and Windows 10. Its recommended to lookup your specific issue on resources like: Google, Stack Overflow or Stack Exchange. Chances are that someone has faced the same issue and there is already an answer to your specific query.
+Мы регулярно разрабатываем на популярных ОС вроде macOS 10.12 и новее, Ubuntu 16.04 и новее, и Windows 10. Рекомендуется поискать вашу проблему на таких ресурсах как Google, Stack Overflow или Stack Exchange. Скорее всего, кто-то уже столкнулся с той же проблемой, и уже есть конкретное решение.
 
-If you are on a different OS, and/or are still running into issues, reach out to [contributors community on our public forum](https://www.freeCodeCamp.org/c/contributors) or the [Contributor's Chat room](https://gitter.im/freeCodeCamp/Contributors). We may be able to troubleshoot some common issues.
+Если вы используете другую ОС, и/или все еще сталкиваетесь с проблемами, обратитесь к [сообществу разработчиков на нашем общественном форуме](https://www.freeCodeCamp.org/c/contributors) или в [Чат разработчиков](https://gitter.im/freeCodeCamp/Contributors). Возможно мы сможем устранить некоторые распостраненные проблемы.
 
-We can't support you on GitHub, because software installation issues are beyond the scope of this project.
+Мы не можем помочь вам в GitHub, потому-что проблемы с установкой ПО выходят за рамки этого проекта.
 
 ### Installing dependencies
 
@@ -232,7 +232,7 @@ Congratulations 🎉! You now have a copy of freeCodeCamp's entire learning plat
 
 [Here is a quick reference](/docs/README.md) to a list of commands that you may need locally from time to time:
 
-## Making changes to your clone of freeCodeCamp locally
+## Локальное внесение изменений в ваш клон freeCodeCamp
 
 Next, you can make changes to files, and commit your changes.
 
