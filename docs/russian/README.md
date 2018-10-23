@@ -1,5 +1,6 @@
 <table>
     <tr>
+        <!-- Do not translate this table -->
         <td> Read these guidelines in </td>
         <td><a href="/CONTRIBUTING.md"> English </a></td>
         <td><a href="/docs/chinese/README.md"> 中文 </a></td>
@@ -10,39 +11,41 @@
     </tr>
 </table>
 
-# Краткая справочная информация
+# Documentation Quick Reference
 
-Привет 👋 !
+Hello 👋 !
 
-Эта директория содержит всю документацию по вкладу в freeCodeCamp.org
+These instructions have not been translated yet. Please check this issue for details: [`#18312`](https://github.com/freeCodeCamp/freeCodeCamp/issues/18312)
 
-## [Если вы только начинаете, начните с прочтения этого.](/docs/russian/CONTRIBUTING.md)
+This directory contains all of the documentation on contributing to freeCodeCamp.org
+
+## [If you are getting started, start by reading this first.](/CONTRIBUTING.md)
 
 ---
 
-## Краткие справочные статьи
+## Quick references articles
 
-1. Как работать над обучающими статьями.
-2. Как работать над кодерскими испытаниями.
-3. Как локально установить freeCodeCamp.
-4. Как локально улавливать исходящие электронные письма.
+1. How to work on Guide articles.
+2. How to work on Coding Challenges.
+3. How to setup freeCodeCamp locally.
+4. How to catch outgoing emails locally.
 
-## Руководства по стилю
+## Style guides
 
-1. Руководство для создания стиля обучающих статей.
-2. Руководство для создания стиля кодерских испытаний.
+1. Style guide for creating guide articles.
+2. Style guide for creating coding challenges.
 
-## Ссылки на команды для локальной работы
+## Quick commands reference when working locally
 
-Быстрые ссылки на команды которые могут понадобиться при локальной работе.
+A quick reference to the commands that you will need, when working locally.
 
-| команда | описание |
+| command | description |
 | ------- | ----------- |
-| `npm run bootstrap` | Загружает различные сервисы |
-| `npm run seed` | Собирает все файлы разметки испытаний и помещает их в MongoDB. |
-| `npm run develop` | Запускает freeCodeCamp API Сервер и программы клиента |
-| `npm test` |  Запускает все JS тесты, включая клиент, сервер, тесты lint и испытаний |
-| `npm run test:client` | Запускает набор тестов клиента |
-| `npm run test:curriculum` | Запускает набор тестов учебной программы |
-| `npm run test:server` | Запускает набор тестов сервера |
-| `npm run commit` | Интерактивный инструмент, который поможет вам создать хороший комментарий |
+| `npm run bootstrap` | Bootstraps the different services |
+| `npm run seed` | Parse all the challenge markdown files and inserts them into MongoDB. |
+| `npm run develop` | Starts the freeCodeCamp API Server and Client Apps |
+| `npm test` |  Run all JS tests in the system, including client, server, lint and challenge tests |
+| `npm run test:client` | Run the client test suite |
+| `npm run test:curriculum` | Run the curriculum test suite |
+| `npm run test:server` | Run the server test suite |
+| `npm run commit` | An interactive tool to help you build a good commit message |
